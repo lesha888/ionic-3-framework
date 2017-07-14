@@ -12,15 +12,15 @@ ENV DEBIAN_FRONTEND=noninteractive \
 #BASIC STUFF
 RUN apt-get update \
     && apt-get install -y python-software-properties software-properties-common build-essential git wget curl unzip ruby \
-    && git config --global user.email "paapaabdullahm@gmail.com" \
-    && git config --global user.name "Paapa Abdullah Morgan" \
+#    && git config --global user.email "paapaabdullahm@gmail.com" \
+#    && git config --global user.name "Paapa Abdullah Morgan" \
     && curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh \
     && bash nodesource_setup.sh \
     && apt-get install -y nodejs \
     && npm install -g npm@"$NPM_VERSION" \
     && npm install -g cordova@"$CORDOVA_VERSION" ionic@"$IONIC_VERSION" \
-    && gem install sass \
-    && ionic start myApp sidemenu \
+#    && gem install sass \
+#    && ionic start myApp sidemenu \
 
 
 #JAVA STUFF
